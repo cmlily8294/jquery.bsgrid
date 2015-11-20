@@ -595,7 +595,7 @@
                 return;
             }
             var dataType = options.settings.dataType;
-            if (options.settings.localData != false) {
+            if (options.settings.localData !== false) {
                 if (dataType == 'json') {
                     $.fn.bsgrid.loadGridData(dataType, $.fn.bsgrid.buildData.gridData(dataType, curPage, options.settings.localData), options);
                 } else if (dataType == 'xml') {
